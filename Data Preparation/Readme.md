@@ -1,10 +1,7 @@
-***
 ## Introduction
-***
 
 Data preparation is the process of cleaning, organizing, and transforming raw data into a format suitable for analysis, reporting, or machine learning. It involves several critical steps, including handling missing values, correcting errors, normalizing or standardizing numeric fields, encoding categorical data, and integrating data from multiple sources. This step ensures data quality, consistency, and usability, which are essential for generating accurate insights and building reliable machine learning models. By addressing issues like inconsistencies, redundancies, and noise early in the workflow, data preparation saves time and improves the overall efficiency and effectiveness of data analysis.
 ## Table of Contents
-***
 1. [How to Add an Index Field Using Python](#how-to-add-an-index-field-using-python)
 2. [How to Change Misleading Field Values Using Python](#how-to-change-misleading-field-values-using-python)
 3. [How to Re-Express Categorical Field Values Using Python](#how-to-re-express-categorical-field-values-using-python)
@@ -12,7 +9,7 @@ Data preparation is the process of cleaning, organizing, and transforming raw da
 5. [How to Identify Outliers Using Python](#how-to-identify-outliers-using-python)
 
 ## **1. How to Add an Index Field Using Python**
-***
+
 ### What is an Index Field?
 An index field serves as a unique identifier for each row in a dataset. It helps you reference, sort, and filter rows more effectively. While most datasets already include an index field, you may need to create one manually when working with unstructured data.
 ### Why Add an Index Field?
@@ -46,7 +43,7 @@ print(df)
 > The `Index` column is added explicitly, but pandas also supports built-in indexing if you want automatic numbering.
 
 ## 2.  How to Change Misleading Field Values Using Python
-***
+
 ### Why Fix Misleading Values?
 Misleading values, such as typos, incorrect labels, or inconsistencies, can distort analysis and lead to unreliable conclusions. Cleaning these values ensures data quality and integrity.
 ### Common Use Cases
@@ -72,7 +69,7 @@ print(df)
 ```
 
 ## 3. How to Re-Express Categorical Field Values Using Python
-***
+
 Re-expressing categorical field values means converting categorical data into a format that can be easily understood and processed by statistical models or algorithms. This is a crucial step in data preparation as many machine learning models require numeric input instead of textual or categorical data.
 ###  3.1 What are Categorical Field Values?
 A categorical field is a column in your dataset where the data represents categories or groups. Examples include:
@@ -127,7 +124,7 @@ print(df)
 - **Label Encoding** is better when the categorical variable has a natural order (e.g., `Small`, `Medium`, `Large`).
 - **One-Hot Encoding** is better when categories have no inherent order and when you're working with algorithms that require numeric input.
 ## 4. How to Standardize Numeric Fields Using Python
-***
+
 ### 4.1 Why Standardize Data?
 Standardization transforms numeric fields to have a mean of 0 and a standard deviation of 1. This process ensures that all features contribute equally to machine learning models, improving accuracy and performance.
 ### 4.2 Implementation in Python
@@ -164,7 +161,7 @@ print(df)
  >Algorithms like SVM, k-means clustering, and logistic regression benefit significantly from standardized data.
 
 ## 5.How to Identify Outliers Using Python
-***
+
 ### What are Outliers?
 Outliers are extreme data points that differ significantly from other observations. They can distort statistical analysis and impact machine learning model performance.
 ### Methods to Identify Outliers
@@ -207,5 +204,5 @@ print(outliers)
 >Use the IQR method for datasets with skewed distributions.
 >Use Z-scores for normally distributed data.
 ## Conclusion
-***
+
 Data preparation is an essential part of data science. By mastering these techniques, you can transform messy, raw data into a clean, structured format ready for analysis and modeling. Each tutorial provides practical Python examples to help you tackle real-world data preparation challenges effectively.
